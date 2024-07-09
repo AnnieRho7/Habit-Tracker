@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+
 /*General styles*/
 
 body {
@@ -47,9 +54,8 @@ h1 {
 
 /*Main*/
 main {
-    background-color: chartreuse;
-
     flex: 1 0 auto;
+    margin-top: 40px;
 }
 
 footer {
