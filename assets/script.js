@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const habitForm = document.getElementById('habit-form');
+    const habitInput = document.getElementById('habit-input');
     const habitList = document.getElementById('habit-list');
 
     function loadHabits() {
@@ -6,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
         habits.forEach(habit => {
             addHabitToList(habit);
         });
+    }
+
+    function saveHabit(habit) {
+        const habits = JSON.parse(localStorage.getItem('habits')) || [];
+        habits.push(habit);
+        localStorage.setItem('habits', JSON.stringify(habits));
     }
 
     function addHabitToList(habit) {
@@ -17,6 +25,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         habitList.appendChild(li);
     }
+
+    habitForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const habitText = habitInput.value.trim();
+        if (habitText === '') {
+            alert('Please enter a habit');
+            return;
+        }
+
+        const habit = { text: habitText, completed: false };
+        addHabitToList(habit);
+        saveHabit(habit);
+        habitInput.value = '';
+    });
 
     loadHabits();
 });
