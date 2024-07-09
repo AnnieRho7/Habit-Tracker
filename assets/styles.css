@@ -15,6 +15,23 @@
     padding: 10px;
 }
 
+#habit-tracker {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+#habit-tracker h2 {
+    color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+
 /*General styles*/
 
 body {
