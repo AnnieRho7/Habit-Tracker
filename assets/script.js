@@ -1,5 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Code here will execute when the DOM is fully loaded and parsed
-});
+    const habitList = document.getElementById('habit-list');
 
-console.log("123")
+    function loadHabits() {
+        const habits = JSON.parse(localStorage.getItem('habits')) || [];
+        habits.forEach(habit => {
+            addHabitToList(habit);
+        });
+    }
+
+    function addHabitToList(habit) {
+        const li = document.createElement('li');
+        li.textContent = habit.text;
+        if (habit.completed) {
+            li.classList.add('completed');
+        }
+
+        habitList.appendChild(li);
+    }
+
+    loadHabits();
+});

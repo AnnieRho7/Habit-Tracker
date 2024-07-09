@@ -59,6 +59,24 @@ button:hover {
     background: #4cae4c;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #e2e2e2;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
 /*General styles*/
 
 body {
