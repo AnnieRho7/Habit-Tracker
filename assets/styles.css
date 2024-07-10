@@ -85,7 +85,6 @@ ul {
 }
 
 li {
-    background: #e2e2e2;
     padding: 10px;
     margin: 10px 0;
     display: flex;
@@ -106,17 +105,18 @@ li:hover {
 
 
 
-/*Header*/
+/* Header */
 header {
     background-color: #ffffff;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem; 
     position: fixed;
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #544750;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    height: 60px; /
 }
 
 header a {
@@ -137,8 +137,30 @@ main {
     flex: 1 auto;
 }
 
+/* Footer */
 footer {
     background-color: #ffffff;
     color: #153677;
-    padding: 1rem;
+    padding: 0.5rem 1rem; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 2px #544750;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 60px; 
+}
+
+#social-networks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%; 
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 0;
+    color: #153677;
 }
