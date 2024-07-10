@@ -8,6 +8,17 @@
     box-sizing: border-box;
 }
 
+/*General styles*/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Exo 2', sans-serif;
+}
+
 #logo {
     color: #153677;
 }
@@ -77,16 +88,7 @@ li {
     color: gray;
 }
 
-/*General styles*/
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #3a3a3a;
-    font-family: 'Exo 2', sans-serif;
-}
 
 /*Header*/
 header {
@@ -116,10 +118,14 @@ h1 {
 
 /*Main*/
 main {
-    flex: 1 0 auto;
+    flex: 1;
     margin-top: 40px;
 }
 
-footer {
-    background-color: cyan;
+ooter {
+    background-color: #153677;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
 }
