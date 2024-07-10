@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const habitInput = document.getElementById('habit-input');
     const habitList = document.getElementById('habit-list');
     const completedList = document.getElementById('completed-list');
+    const weeklyProgress = document.getElementById('weekly-progress');
 
     function loadHabits() {
         const habits = JSON.parse(localStorage.getItem('habits')) || [];
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 addHabitToList(habit);
             }
         });
+        updateWeeklyView(); 
     }
 
     function saveHabit(habit) {
@@ -48,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 completedList.removeChild(li);
                 addHabitToList(habit);
             }
+            updateWeeklyView(); 
         });
 
         const deleteButton = document.createElement('button');
@@ -56,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.stopPropagation();
             habitList.removeChild(li);
             deleteHabitFromStorage(habit.text);
+            updateWeeklyView(); 
         });
 
         li.appendChild(deleteButton);
@@ -78,6 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 habitList.removeChild(li);
                 addHabitToList(habit);
             }
+
+            updateWeeklyView();
         });
 
         const deleteButton = document.createElement('button');
@@ -86,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.stopPropagation();
             completedList.removeChild(li);
             deleteHabitFromStorage(habit.text);
+            updateWeeklyView();
         });
 
         li.appendChild(deleteButton);
@@ -104,7 +111,22 @@ document.addEventListener('DOMContentLoaded', function() {
         addHabitToList(habit);
         saveHabit(habit);
         habitInput.value = '';
+        updateWeeklyView();
     });
+
+    function updateWeeklyView() {
+        const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+        weeklyProgress.innerHTML = '';
+        days.forEach(day => {
+            const dayDiv = document.createElement('div');
+            dayDiv.classList.add('day');
+            dayDiv.textContent = day;
+
+           
+
+            weeklyProgress.appendChild(dayDiv);
+        });
+    }
 
     loadHabits();
 });
