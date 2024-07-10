@@ -90,7 +90,7 @@ li {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    transition: box-shadow 0.3s. background-color 0.3s;
+    transition: box-shadow 0.3s, background-color 0.3s;
 }
 
 li:hover {
@@ -135,6 +135,31 @@ h1 {
 /*Main*/
 main {
     flex: 1 auto;
+}
+
+#weekly-view {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#weekly-progress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day {
+    flex: 1;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.day.completed {
+    background: #4cae4c;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* Footer */
