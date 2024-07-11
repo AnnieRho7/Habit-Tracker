@@ -68,19 +68,8 @@ HTML, CSS, JavaScript
 - [Am I Responsive?](http://ami.responsivedesign.is/) - Responsive design visualization tool.
 - [Balsamic](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA14WdBhD8ARIsANao07g6CkndNmxQPlHP92mM3VQBwb6lbQIg5FPinhmNFxWsAnM7BpA_PukaAldMEALw_wcB 
  Balsamiq is used to create and design wireframes.
+
 - - -
-
-## Deployment & Local Development
-
-### Deployment
-
-The site is deployed using GitHub Pages. To deploy the site:
-
-1. Login to GitHub.
-2. Navigate to your repository [HabitTrackerRepo](https://github.com/AnnieRho7/Habit-Tracker).
-3. Access the Settings tab.
-4. Scroll down to the GitHub Pages section.
-5. From the Source dropdown, select the main branch and save.
 
 ## Deployment
 - Github pages
@@ -107,7 +96,7 @@ The site is deployed using GitHub Pages. To deploy the site:
    - Type git clone, and then paste the URL you copied in Step 3.
       - $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
    - Press Enter. Your local clone will be created.
-   
+
 - - -
 
 ## Testing
@@ -125,7 +114,8 @@ Both HTML and CSS were validated using W3C validators, ensuring compliance and c
 
 Lighthouse was used to test performance, accessibility, best practices, and SEO of the website.
 
-![Lighthouse Report](assets/images/lighthouse-report.png)
+![Lighthouse testing for Mobile](/assets/readme-images/lighthousemobile.png)
+![Lighthouse testing for Desktop](/assets/readme-images/lighthousedesk.png)
 
 - - -
 
