@@ -22,14 +22,14 @@ Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 Habit Tracker is a single-page application featuring sections for adding habits, marking them as completed, deleting habits, and displaying weekly progress.
 
 ## Picture of the Habit Section
-![Picture of the Habit Section](assets/images/habit-sec.png)
+![Habit Section](/assets/readme-images/habittracker.png)
 
 In the Habit section, you can enter new habits, mark them as completed or incomplete, and delete them.
 
 ## Picture of the Weekly Progress Section
-![Picture of the Weekly Progress Section](assets/images/weekly-progress-sec.png)
+![Weekly Progress Section](/assets/readme-images/weeklyprogress.png)
 
-The Weekly Progress section visually represents your habits' completion status over the course of a week.
+The Weekly Progress section visually represents your habits' completion status over the course of 7 days.
 
 - - -
 
@@ -41,13 +41,14 @@ I have ensured that Habit Tracker is accessible-friendly by:
 * Maintaining sufficient color contrast throughout the site.
 * Conducting accessibility testing using tools like Lighthouse.
 
-![Picture of the Lighthouse testing](assets/images/lighthouse-testing.png)
+![Lighthouse testing for Mobile](/assets/readme-images/lighthousemobile.png)
+![Lighthouse testing for Desktop](/assets/readme-images/lighthousedesk.png)
 
 ### Future Implementations
 
 * Introduce streak tracking for consecutive days of completing habits.
 * Add reminders and notifications for habit completion.
-* Add monthly logs.
+* Add monthly logs for users to view and analyze their habit completion data monthly.
 
 - - -
 
@@ -65,7 +66,8 @@ HTML, CSS, JavaScript
 - [Font Awesome](https://fontawesome.com/) - Icons for UI elements.
 - [Google Developer Tools](https://developer.chrome.com/docs/devtools/) - Testing and troubleshooting.
 - [Am I Responsive?](http://ami.responsivedesign.is/) - Responsive design visualization tool.
-
+- [Balsamic](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA14WdBhD8ARIsANao07g6CkndNmxQPlHP92mM3VQBwb6lbQIg5FPinhmNFxWsAnM7BpA_PukaAldMEALw_wcB 
+ Balsamiq is used to create and design wireframes.
 - - -
 
 ## Deployment & Local Development
@@ -80,26 +82,32 @@ The site is deployed using GitHub Pages. To deploy the site:
 4. Scroll down to the GitHub Pages section.
 5. From the Source dropdown, select the main branch and save.
 
-### Local Development
-
-#### How to Fork
-
-To fork the Habit Tracker repository:
-
-1. Log in to GitHub.
-2. Go to the repository [HabitTrackerRepo](https://github.com/AnnieRho7/Habit-Tracker).
-3. Click the Fork button in the top right corner.
-
-#### How to Clone
-
-To clone the repository:
-
-1. Log in to GitHub.
-2. Go to the repository [YourHabitTrackerRepo](https://github.com/YourHabitTrackerRepo).
-3. Click on the Code button, choose your preferred method (HTTPS, SSH, or GitHub CLI), and copy the link.
-4. Open your terminal and navigate to the directory where you want to clone the project.
-5. Type `git clone` followed by the copied URL and press Enter.
-
+## Deployment
+- Github pages
+    - This project was deployed to GitHub Pages using the following steps
+      - Log in to GitHub and locate the GitHub Repository
+      - At the top of the Repository (not top of page), locate the "Settings" Button on 
+        the menu.
+      - Scroll down the Settings page until you locate the "GitHub Pages" Section.
+      - Under "Source", click the dropdown called "None" and select "Master Branch".
+      - The page will automatically refresh.
+      - Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+      - live link for the page can be found here [Aligned](https://annierho7.github.io/aligned/index.html)
+- Forking the GitHub Repository
+    - By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps
+     - Log in to GitHub and locate the GitHub Repository
+     - At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+     - You should now have a copy of the original repository in your GitHub account.
+- Making a Local Clone
+   - Log in to GitHub and locate the GitHub Repository
+   - Under the repository name, click "Clone or download".
+   -  To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+   - Open Git Bash
+   - Change the current working directory to the location where you want the cloned directory to be made
+   - Type git clone, and then paste the URL you copied in Step 3.
+      - $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   - Press Enter. Your local clone will be created.
+   
 - - -
 
 ## Testing
