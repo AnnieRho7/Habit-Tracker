@@ -22,12 +22,12 @@ Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 Habit Tracker is a single-page application featuring sections for adding habits, marking them as completed, deleting habits, and displaying weekly progress.
 
 ## Picture of the Habit Section
-![Habit Section](assets/readme-images/habittracker.png)
+![Habit Section](/assets/readme-images/habittracker.png)
 
 In the Habit section, you can enter new habits, mark them as completed or incomplete, and delete them.
 
 ## Picture of the Weekly Progress Section
-![Weekly Progress Section](assets/readme-images/weeklyprogress.png)
+![Weekly Progress Section](/assets/readme-images/weeklyprogress.png)
 
 The Weekly Progress section visually represents your habits' completion status over the course of 7 days.
 
@@ -100,13 +100,12 @@ HTML, CSS, JavaScript
 
 Testing was conducted throughout the development process using Chrome Developer Tools for debugging and troubleshooting.
 
-### W3C Validator
 
-Both HTML and CSS were validated using W3C validators, ensuring compliance and correctness.
+Both HTML and CSS were validated using W3C validators, Javascript was tested using JSHINT ensuring compliance and correctness.
 
-- [index.html Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyour-habit-tracker-url.com%2F)
-- [style.css Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyour-habit-tracker-url.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-- [JSHINT Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyour-habit-tracker-url.com%2F)
+![index.html Validator](assets/readme-images/htmlvalidat.png)
+![style.css Validator](assets/readme-images/cssvalidate.png)
+![JSHINT Validator](assets/readme-images/javahint.png)
 
 ### Lighthouse
 
@@ -114,6 +113,20 @@ Lighthouse was used to test performance, accessibility, best practices, and SEO 
 
 ![Lighthouse testing for Mobile](assets/readme-images/lighthousemobile.png)
 ![Lighthouse testing for Desktop](assets/readme-images/lighthousedesk.png)
+
+### Browser Compatibility
+Tested the website on different browsers to ensure compatibility:
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari
+
+### Responsiveness
+Screenshots of responsivness on different browsers.
+[Microsoft](/assets/readme-images/EdgeSS.png)
+[Firefox](/assets/readme-images/firefoxSS.png)
+[Google](/assets/readme-images/chromeSS.png)
+[Safari](/assets/readme-images/safariscreenshot.jpg)
 
 
 - - -
