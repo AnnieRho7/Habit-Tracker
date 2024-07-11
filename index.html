@@ -35,11 +35,34 @@
                     <input type="text" id="habit-input" placeholder="Enter a new habit" required>
                     <button type="submit">Add</button>
                 </form>
-                <ul id="habit-list"></ul>
-                <ul id="completed-list"></ul>
-                <div id="weekly-view">
-                    <h3>Weekly View</h3>
-                    <div id="weekly-progress"></div>
+                
+                <!-- Habit Table -->
+                <table id="habit-table">
+                    <thead>
+                        <tr>
+                            <th>Habit</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="habit-list"></tbody>
+                </table>
+
+                <!-- Weekly Progress Section -->
+                <div id="weekly-progress">
+                    <h3>Weekly Progress</h3>
+                    <div id="progress-bars"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+                
                 </div>
             </div>
         </div>
