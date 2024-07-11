@@ -41,8 +41,8 @@ I have ensured that Habit Tracker is accessible-friendly by:
 * Maintaining sufficient color contrast throughout the site.
 * Conducting accessibility testing using tools like Lighthouse.
 
-![Lighthouse testing for Mobile](/assets/readme-images/lighthousemobile.png)
-![Lighthouse testing for Desktop](/assets/readme-images/lighthousedesk.png)
+![Lighthouse testing for Mobile](assets/readme-images/lighthousemobile.png)
+![Lighthouse testing for Desktop](assets/readme-images/lighthousedesk.png)
 
 ### Future Implementations
 
@@ -114,8 +114,8 @@ Both HTML and CSS were validated using W3C validators, ensuring compliance and c
 
 Lighthouse was used to test performance, accessibility, best practices, and SEO of the website.
 
-![Lighthouse testing for Mobile](/assets/readme-images/lighthousemobile.png)
-![Lighthouse testing for Desktop](/assets/readme-images/lighthousedesk.png)
+![Lighthouse testing for Mobile](assets/readme-images/lighthousemobile.png)
+![Lighthouse testing for Desktop](assets/readme-images/lighthousedesk.png)
 
 - - -
 
