@@ -17,6 +17,35 @@ Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 
 - - -
 
+### Testing user stories
+**User Story 1**: As a user, I want to easily add new habits to track my daily routines.
+- Feature: Input field to add new habits.
+- Feature: Submit button to add the habit to the tracker.
+
+**User Story 2**: As a user, I want to mark habits as completed when I finish them each day.
+- Feature: Toggle functionality to mark habits as completed or incomplete.
+- Feature: Visual indication (a tick) when a habit is marked as completed.
+
+**User Story 3**: As a user, I want to view my daily progress at a glance.
+- Feature: Table layout displaying habits on the left and days of the week (Monday to Sunday) across the top.
+- eature: Clickable boxes to mark habits as completed for each day.
+
+**User Story 4**: As a user, I want to delete habits that I no longer wish to track.
+- Feature: Delete button next to each habit to remove it from the tracker.
+
+**User Story 5**: As a user, I want to view my weekly progress visually.
+-  Weekly progress bar showing completion indicator for each habit.
+
+## Bugs
+I ran my code through validator and learned that I had a space character in one of my folders which was an error i fixed.
+After changing some CSS my footer was showing list style type so i set that to none.
+Weekly progress bars were off so I  went and checked css to see I had forgot to remove previous CSS.
+My habit tracker was not responive on all screen sizes. I added a media query to fix this.
+
+
+
+
+
 ### Features
 
 Habit Tracker is a single-page application featuring sections for adding habits, marking them as completed, deleting habits, and displaying weekly progress.
