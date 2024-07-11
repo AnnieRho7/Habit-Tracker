@@ -2,7 +2,7 @@
 
 The Habit Tracker site is designed to help users track their daily habits and monitor their progress over time. Users can add new habits, delete them, mark them as completed or incomplete, and view their weekly progress.
 
-Visit the deployed site: [Habit Tracker](https://your-deployed-habit-tracker-url.com/)
+Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 
 ## Picture of the website in different devices
 ![Picture of the website in different devices](assets/images/responsive.img.png)
@@ -47,6 +47,7 @@ I have ensured that Habit Tracker is accessible-friendly by:
 
 * Introduce streak tracking for consecutive days of completing habits.
 * Add reminders and notifications for habit completion.
+* Add monthly logs.
 
 - - -
 
@@ -74,7 +75,7 @@ HTML, CSS, JavaScript
 The site is deployed using GitHub Pages. To deploy the site:
 
 1. Login to GitHub.
-2. Navigate to your repository [YourHabitTrackerRepo](https://github.com/YourHabitTrackerRepo).
+2. Navigate to your repository [HabitTrackerRepo](https://github.com/AnnieRho7/Habit-Tracker).
 3. Access the Settings tab.
 4. Scroll down to the GitHub Pages section.
 5. From the Source dropdown, select the main branch and save.
