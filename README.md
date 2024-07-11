@@ -22,12 +22,12 @@ Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 Habit Tracker is a single-page application featuring sections for adding habits, marking them as completed, deleting habits, and displaying weekly progress.
 
 ## Picture of the Habit Section
-![Habit Section](/assets/readme-images/habittracker.png)
+![Habit Section](assets/readme-images/habittracker.png)
 
 In the Habit section, you can enter new habits, mark them as completed or incomplete, and delete them.
 
 ## Picture of the Weekly Progress Section
-![Weekly Progress Section](/assets/readme-images/weeklyprogress.png)
+![Weekly Progress Section](assets/readme-images/weeklyprogress.png)
 
 The Weekly Progress section visually represents your habits' completion status over the course of 7 days.
 
@@ -40,9 +40,6 @@ I have ensured that Habit Tracker is accessible-friendly by:
 * Using semantic HTML.
 * Maintaining sufficient color contrast throughout the site.
 * Conducting accessibility testing using tools like Lighthouse.
-
-![Lighthouse testing for Mobile](assets/readme-images/lighthousemobile.png)
-![Lighthouse testing for Desktop](assets/readme-images/lighthousedesk.png)
 
 ### Future Implementations
 
@@ -66,7 +63,7 @@ HTML, CSS, JavaScript
 - [Font Awesome](https://fontawesome.com/) - Icons for UI elements.
 - [Google Developer Tools](https://developer.chrome.com/docs/devtools/) - Testing and troubleshooting.
 - [Am I Responsive?](http://ami.responsivedesign.is/) - Responsive design visualization tool.
-- [Balsamic](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA14WdBhD8ARIsANao07g6CkndNmxQPlHP92mM3VQBwb6lbQIg5FPinhmNFxWsAnM7BpA_PukaAldMEALw_wcB 
+- [Balsamic](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA14WdBhD8ARIsANao07g6CkndNmxQPlHP92mM3VQBwb6lbQIg5FPinhmNFxWsAnM7BpA_PukaAldMEALw_wcB)
  Balsamiq is used to create and design wireframes.
 
 - - -
@@ -109,6 +106,7 @@ Both HTML and CSS were validated using W3C validators, ensuring compliance and c
 
 - [index.html Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyour-habit-tracker-url.com%2F)
 - [style.css Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyour-habit-tracker-url.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- [JSHINT Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyour-habit-tracker-url.com%2F)
 
 ### Lighthouse
 
@@ -116,6 +114,7 @@ Lighthouse was used to test performance, accessibility, best practices, and SEO 
 
 ![Lighthouse testing for Mobile](assets/readme-images/lighthousemobile.png)
 ![Lighthouse testing for Desktop](assets/readme-images/lighthousedesk.png)
+
 
 - - -
 
@@ -126,8 +125,8 @@ Lighthouse was used to test performance, accessibility, best practices, and SEO 
 * GitPod for providing an excellent IDE for coding. [GitPod](https://www.gitpod.io/)
 * Google Fonts for providing fonts used in the project. [Google Fonts](https://fonts.google.com/)
 * Stack Overflow for valuable insights and problem-solving assistance. [Stack Overflow](https://stackoverflow.com/)
-* ChatGPT for helping me figure out my code. [ChatGPT](https://chatgpt.com/)
-* Perplexity for also helping me breakdown and understand my code. [Perplexity](https://www.perplexity.ai/)
+* ChatGPT for helping me breakdown and understand javascript. [ChatGPT](https://chatgpt.com/)
+* Perplexity for helping me breakdown and understand javascript. [Perplexity](https://www.perplexity.ai/)
 * W3Schools for helping me write my HTML, CSS and Javascript. [W3Schools](https://www.w3schools.com/)
 * Font Awesome for my icons. [Font Awesome](https://fontawesome.com/)
 
