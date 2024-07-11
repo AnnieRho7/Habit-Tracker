@@ -5,7 +5,7 @@ The Habit Tracker site is designed to help users track their daily habits and mo
 Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 
 ## Picture of the website in different devices
-![Picture of the website in different devices](assets/images/responsive.img.png)
+![Am i responsive image](/assets/readme-images/responsive.png)  
 
 ## User Experience (UX)
 
@@ -87,7 +87,7 @@ The site is deployed using GitHub Pages. To deploy the site:
 To fork the Habit Tracker repository:
 
 1. Log in to GitHub.
-2. Go to the repository [YourHabitTrackerRepo](https://github.com/YourHabitTrackerRepo).
+2. Go to the repository [HabitTrackerRepo](https://github.com/AnnieRho7/Habit-Tracker).
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
