@@ -1,175 +1,139 @@
-# Aligned
+# Habit Tracker
 
+The Habit Tracker site is designed to help users track their daily habits and monitor their progress over time. Users can add new habits, delete them, mark them as completed or incomplete, and view their weekly progress.
 
- 
-![Am i responsive image](/assets/readme-images/responsive.png)  
+Visit the deployed site: [Habit Tracker](https://your-deployed-habit-tracker-url.com/)
 
-[Click Here To Visit Live Site](https://annierho7.github.io/aligned/index.html)
+## Picture of the website in different devices
+![Picture of the website in different devices](assets/images/responsive.img.png)
 
-
-## Design & Planning:
+## User Experience (UX)
 
 ### User Stories
-The features of this project are based on the following user stories:
 
-- As a visiting user, I want to navigate the site easily.
-- As a visiting user, I want to know what classes and services are provided by the studio.
-- As a visiting user, I want to see images of the studio, classes, and events.
-- As a visiting user, I want to know how to contact the studio for inquiries or bookings.
+* As a user, I want to easily add and manage my daily habits.
+* As a user, I want to see my progress visually, both daily and weekly.
+* As a user, I want to be able to delete habits that I no longer need to track.
 
-### Wireframes
-![index](/assets/readme-images/wireframe1.png)
+- - -
 
-showing nav bar for mobile devices.
+### Features
 
-![timetable](/assets/readme-images/wireframetimetable.png)
-![contact](/assets/readme-images/wireframecontact.png)
+Habit Tracker is a single-page application featuring sections for adding habits, marking them as completed, deleting habits, and displaying weekly progress.
 
-### Typography
-I used https://fonts.google.com/ to pick my fonts. I started just using the fonts I used for the Love Running Project and changed to DM Sans for my headings and Poppins for my body. I like the simplicity of these fonts I think they are easy to read and go well with my brand.
+## Picture of the Habit Section
+![Picture of the Habit Section](assets/images/habit-sec.png)
 
-### Colour Scheme
-- **Primary Color**: #D1B1C8 (soft pink/purple)
-- **Secondary Color**: #544750 (dark purple)
-![colour palette](/assets/readme-images/colours.png)
+In the Habit section, you can enter new habits, mark them as completed or incomplete, and delete them.
 
-## Features:
-### Navigation
-- The navigation bar is horizontal, located at the top of the page, and is fixed.
-- The navigation bar includes the logo on the left, which links to home page.
-- The navigation bar contains links to Home, Timetable and Contact Us sections.
-![navbar](/assets/readme-images/navbar.png)
+## Picture of the Weekly Progress Section
+![Picture of the Weekly Progress Section](assets/images/weekly-progress-sec.png)
 
-### Header
-- The header features a hero image of a yoga session.
-- Display of the studio name "Aligned" with the sub-heading "Yoga Studio"
-![header](/assets/readme-images/header.png)
+The Weekly Progress section visually represents your habits' completion status over the course of a week.
 
-### Benefits
-- A brief overview of the benefits of yoga.
-![benefits](/assets/readme-images/benefits.png)
+- - -
 
-### Timetable
-- Information on different yoga classes offered (e.g., Beginners, Hatha, Yin).
-- Weekly schedule with times
-![timetable](/assets/readme-images/timetable.png)
+### Accessibility
 
-### Gallery
-- A collection of images showcasing the studio, classes, and events.
-- Captions describing each image.
-![gallery](/assets/readme-images/gallery.png)
+I have ensured that Habit Tracker is accessible-friendly by:
 
-### Contact Us
-- Contact details including phone number, email address, and studio address.
-- A contact form with required fields to ensure correct completion.
-![contact us](/assets/readme-images/contactus.png)
+* Using semantic HTML.
+* Maintaining sufficient color contrast throughout the site.
+* Conducting accessibility testing using tools like Lighthouse.
 
-### Footer
-- Links to social media: Facebook, Instagram, Twitter, and YouTube via icons.
-![footer](/assets/readme-images/footer.png)
+![Picture of the Lighthouse testing](assets/images/lighthouse-testing.png)
 
-## Future features
-- About Us section showing profiles of the instructors with images and bios.
-- Blog articles on yoga, wellness, and mindfulness.
-- Online booking system for classes and events.
-- Integration with a membership management system.
-- Additional resources such as downloadable guides and videos.
+### Future Implementations
+
+* Introduce streak tracking for consecutive days of completing habits.
+* Add reminders and notifications for habit completion.
+
+- - -
 
 ## Technologies Used
-- HTML5 
-- CSS3
- ### Frameworks, Libraries & Programes Used
-- #### [Google fonts](https://fonts.google.com/knowledge)
-Google fonts were used to import the 'DM Sans' and 'Poppins' font into the style.css file which is used on all pages throughout the project. DM Sans was used for headings and poppins was used for body.
- - #### [Font Awesome](https://fontawesome.com/)
-Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
- - #### [Git](https://gitpod.io/)
-Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-  - #### [GitHub](https://github.com/)
-GitHub is used to store the projects code after being pushed from Git.
- - #### [Balsamic](https://balsamiq.com/wireframes/?gclid=Cj0KCQiA14WdBhD8ARIsANao07g6CkndNmxQPlHP92mM3VQBwb6lbQIg5FPinhmNFxWsAnM7BpA_PukaAldMEALw_wcB)
-Balsamiq is used to create and design wireframes.
+
+### Languages Used
+
+HTML, CSS, JavaScript
+
+### Frameworks, Libraries & Programs Used
+
+- [GitHub](https://github.com/) - Repository hosting and version control.
+- [GitPod](https://www.gitpod.io/) - Integrated Development Environment (IDE).
+- [Google Fonts](https://fonts.google.com/) - Importing fonts used on the website.
+- [Font Awesome](https://fontawesome.com/) - Icons for UI elements.
+- [Google Developer Tools](https://developer.chrome.com/docs/devtools/) - Testing and troubleshooting.
+- [Am I Responsive?](http://ami.responsivedesign.is/) - Responsive design visualization tool.
+
+- - -
+
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using GitHub Pages. To deploy the site:
+
+1. Login to GitHub.
+2. Navigate to your repository [YourHabitTrackerRepo](https://github.com/YourHabitTrackerRepo).
+3. Access the Settings tab.
+4. Scroll down to the GitHub Pages section.
+5. From the Source dropdown, select the main branch and save.
+
+### Local Development
+
+#### How to Fork
+
+To fork the Habit Tracker repository:
+
+1. Log in to GitHub.
+2. Go to the repository [YourHabitTrackerRepo](https://github.com/YourHabitTrackerRepo).
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in to GitHub.
+2. Go to the repository [YourHabitTrackerRepo](https://github.com/YourHabitTrackerRepo).
+3. Click on the Code button, choose your preferred method (HTTPS, SSH, or GitHub CLI), and copy the link.
+4. Open your terminal and navigate to the directory where you want to clone the project.
+5. Type `git clone` followed by the copied URL and press Enter.
+
+- - -
 
 ## Testing
 
-### Google's Lighthouse Performance
-![Desktop](/assets/readme-images/desktoplighthouse.png)
-![Mobile](/assets/readme-images/mobile.png)
+Testing was conducted throughout the development process using Chrome Developer Tools for debugging and troubleshooting.
 
-### Browser Compatibility
-Tested the website on different browsers to ensure compatibility:
-- Google Chrome
-- Mozilla Firefox
-- Microsoft Edge
-- Safari
+### W3C Validator
 
-### Responsiveness
-Screenshots of responsivness on different browsers.
-[Microsoft](/assets/readme-images/Edge.png)
-[Firefox](/assets/readme-images/Firefox.png)
-[Google](/assets/readme-images/Chrome.png)
-[Safari](/assets/readme-images/Safari.jpg)
+Both HTML and CSS were validated using W3C validators, ensuring compliance and correctness.
 
-### Code Validation
-I tested the HTML for index, timetable and contact page.
-Tested CSS.
+- [index.html Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fyour-habit-tracker-url.com%2F)
+- [style.css Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fyour-habit-tracker-url.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-[HTML validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fannierho7.github.io%2Faligned%2Findex.html)
-![HTML](/assets/readme-images/HTML.png)
-![HTML](/assets/readme-images/timetabeval.png)
-![HTML](/assets/readme-images/valcontact.png)
-![CSS validator](/assets/readme-images/CSS.png)
+### Lighthouse
 
-### Testing user stories
-**User Story 1**: As a visiting user, I want to navigate the site easily.
-- Navigation bar functionality: Met
-- Sticky header: Met
+Lighthouse was used to test performance, accessibility, best practices, and SEO of the website.
 
-**User Story 2**: As a visiting user, I want to know what classes and services are provided by the studio.
-- Class and services information: Met
+![Lighthouse Report](assets/images/lighthouse-report.png)
 
-**User Story 3**: As a visiting user, I want to see images of the studio, classes, and events.
-- Gallery functionality: Met
+- - -
 
-**User Story 4**: As a visiting user, I want to know how to contact the studio for inquiries or bookings.
-- Contact Us section details: Met
+## Credits
 
-## Bugs
-I ran my code through validator and learned that I had spaces in my photo name so I went back in a fixed that so there was no spaces. 
-I resized the photos for each page for better optimisation.
-responsiveness on contact us page - I created the contact us page first for desktop so when I was checking responsivness for mobile it was harder to figure out, so in future I would make sure to style for mobile first and work my way up to avoid this problem in the future.
+* Code Institute for foundational knowledge and project inspiration. [Code Institute](https://codeinstitute.net/)
+* GitHub for version control and repository hosting. [GitHub](https://github.com/)
+* GitPod for providing an excellent IDE for coding. [GitPod](https://www.gitpod.io/)
+* Google Fonts for providing fonts used in the project. [Google Fonts](https://fonts.google.com/)
+* Stack Overflow for valuable insights and problem-solving assistance. [Stack Overflow](https://stackoverflow.com/)
+* ChatGPT for helping me figure out my code. [ChatGPT](https://chatgpt.com/)
+* Perplexity for also helping me breakdown and understand my code. [Perplexity](https://www.perplexity.ai/)
+* W3Schools for helping me write my HTML, CSS and Javascript. [W3Schools](https://www.w3schools.com/)
+* Font Awesome for my icons. [Font Awesome](https://fontawesome.com/)
 
-## Deployment
-- Github pages
-    - This project was deployed to GitHub Pages using the following steps
-      - Log in to GitHub and locate the GitHub Repository
-      - At the top of the Repository (not top of page), locate the "Settings" Button on 
-        the menu.
-      - Scroll down the Settings page until you locate the "GitHub Pages" Section.
-      - Under "Source", click the dropdown called "None" and select "Master Branch".
-      - The page will automatically refresh.
-      - Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-      - live link for the page can be found here [Aligned](https://annierho7.github.io/aligned/index.html)
-- Forking the GitHub Repository
-    - By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps
-     - Log in to GitHub and locate the GitHub Repository
-     - At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-     - You should now have a copy of the original repository in your GitHub account.
-- Making a Local Clone
-   - Log in to GitHub and locate the GitHub Repository
-   - Under the repository name, click "Clone or download".
-   -  To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-   - Open Git Bash
-   - Change the current working directory to the location where you want the cloned directory to be made
-   - Type git clone, and then paste the URL you copied in Step 3.
-      - $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-   - Press Enter. Your local clone will be created.
+- - -
 
-   ## Credits
-   I got my code from following along with the love running project, Chat GPT, W3Schools, codingnapal and google to help me achieve my finished look.
-   I used pexels for my final images but also checked out unsplashed and pixabay.
-   I got inspiration from pinterest and code nepal and love running project.
-   I used chat GPT and my own knowledge to create the content for my website. 
-   for my 404 page I followed along with the following link to github (https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
+## Acknowledgments
 
-   ## Acknowledgments
+Thanks to my class mates, my tutor for taking time to explain things to me and various online tutorials for guidance and inspiration.
