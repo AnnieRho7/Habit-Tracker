@@ -2,103 +2,95 @@ document.addEventListener('DOMContentLoaded', function() {
     const habitForm = document.getElementById('habit-form');
     const habitInput = document.getElementById('habit-input');
     const habitList = document.getElementById('habit-list');
-    const completedList = document.getElementById('completed-list');
-    const weeklyProgress = document.getElementById('weekly-progress');
+    const progressBars = document.getElementById('progress-bars');
 
+    // Load habits from local storage and render them
     function loadHabits() {
         const habits = JSON.parse(localStorage.getItem('habits')) || [];
-        habits.forEach(habit => {
-            if (habit.completed) {
-                addHabitToCompletedList(habit);
-            } else {
-                addHabitToList(habit);
-            }
-        });
-        updateWeeklyView(); 
+        habits.forEach(habit => addHabitToTable(habit));
+        updateProgressBars();  // Update progress bars
     }
 
+     // Save a new habit to local storage
     function saveHabit(habit) {
         const habits = JSON.parse(localStorage.getItem('habits')) || [];
         habits.push(habit);
         localStorage.setItem('habits', JSON.stringify(habits));
     }
 
+    // Update habit in local storage
     function updateHabitInStorage(updatedHabit) {
         let habits = JSON.parse(localStorage.getItem('habits')) || [];
         habits = habits.map(habit => habit.text === updatedHabit.text ? updatedHabit : habit);
         localStorage.setItem('habits', JSON.stringify(habits));
     }
 
+    // Delete habit from local storage
     function deleteHabitFromStorage(habitText) {
         let habits = JSON.parse(localStorage.getItem('habits')) || [];
         habits = habits.filter(habit => habit.text !== habitText);
         localStorage.setItem('habits', JSON.stringify(habits));
     }
 
-    function addHabitToList(habit) {
-        const li = document.createElement('li');
-        li.textContent = habit.text;
+    // Add a habit to the table
+    function addHabitToTable(habit) {
+        const tr = document.createElement('tr');
 
-        li.addEventListener('click', function() {
-            li.classList.toggle('completed');
-            habit.completed = !habit.completed;
-            updateHabitInStorage(habit);
-            if (habit.completed) {
-                habitList.removeChild(li);
-                addHabitToCompletedList(habit);
-            } else {
-                completedList.removeChild(li);
-                addHabitToList(habit);
-            }
-            updateWeeklyView(); 
+        const tdHabit = document.createElement('td');
+        tdHabit.textContent = habit.text;
+        tr.appendChild(tdHabit);
+
+        // Create table cells for each day
+        const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+        days.forEach(day => {
+            const td = document.createElement('td');
+            td.classList.add('day');
+            td.dataset.day = day;
+            td.textContent = habit[day] ? '✔️' : '';
+            td.addEventListener('click', () => {
+                habit[day] = !habit[day];
+                td.textContent = habit[day] ? '✔️' : '';
+                updateHabitInStorage(habit);
+                updateProgressBars();  // Update progress bars when a habit is marked
+            });
+            tr.appendChild(td);
         });
 
+        // Add delete button for each habit
+        const tdDelete = document.createElement('td');
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
         deleteButton.addEventListener('click', function(event) {
             event.stopPropagation();
-            habitList.removeChild(li);
+            habitList.removeChild(tr);
             deleteHabitFromStorage(habit.text);
-            updateWeeklyView(); 
+            updateProgressBars();  // Update progress bars when a habit is deleted
         });
+        tdDelete.appendChild(deleteButton);
+        tr.appendChild(tdDelete);
 
-        li.appendChild(deleteButton);
-        habitList.appendChild(li);
+        habitList.appendChild(tr);
     }
 
-    function addHabitToCompletedList(habit) {
-        const li = document.createElement('li');
-        li.textContent = habit.text;
-        li.classList.add('completed');
-
-        li.addEventListener('click', function() {
-            li.classList.toggle('completed');
-            habit.completed = !habit.completed;
-            updateHabitInStorage(habit);
-            if (habit.completed) {
-                completedList.removeChild(li);
-                addHabitToCompletedList(habit);
-            } else {
-                habitList.removeChild(li);
-                addHabitToList(habit);
-            }
-
-            updateWeeklyView();
+    // Update the progress bars to reflect habit completion
+    function updateProgressBars() {
+        const habits = JSON.parse(localStorage.getItem('habits')) || [];
+        progressBars.innerHTML = '';
+        habits.forEach(habit => {
+            const totalDays = 7;
+            const completedDays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'].reduce((acc, day) => acc + (habit[day] ? 1 : 0), 0);
+            const progressBar = document.createElement('div');
+            progressBar.classList.add('progress-bar');
+            const progress = document.createElement('div');
+            progress.classList.add('progress');
+            progress.style.width = `${(completedDays / totalDays) * 100}%`;
+            progressBar.textContent = `${habit.text}: ${completedDays}/${totalDays}`;
+            progressBar.appendChild(progress);
+            progressBars.appendChild(progressBar);
         });
-
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.addEventListener('click', function(event) {
-            event.stopPropagation();
-            completedList.removeChild(li);
-            deleteHabitFromStorage(habit.text);
-            updateWeeklyView();
-        });
-
-        li.appendChild(deleteButton);
-        completedList.appendChild(li);
     }
 
+    // Add new habit
     habitForm.addEventListener('submit', function(event) {
         event.preventDefault();
         const habitText = habitInput.value.trim();
@@ -107,26 +99,11 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const habit = { text: habitText, completed: false };
-        addHabitToList(habit);
+        const habit = { text: habitText, mon: false, tue: false, wed: false, thu: false, fri: false, sat: false, sun: false };
+        addHabitToTable(habit);
         saveHabit(habit);
         habitInput.value = '';
-        updateWeeklyView();
     });
-
-    function updateWeeklyView() {
-        const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
-        weeklyProgress.innerHTML = '';
-        days.forEach(day => {
-            const dayDiv = document.createElement('div');
-            dayDiv.classList.add('day');
-            dayDiv.textContent = day;
-
-           
-
-            weeklyProgress.appendChild(dayDiv);
-        });
-    }
 
     loadHabits();
 });
