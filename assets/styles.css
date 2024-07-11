@@ -212,6 +212,8 @@ footer {
 
     th, td {
         padding: 8px;
+        max-width: 150px;
+        text-overflow: ellipsis;
     }
 
     .day {
