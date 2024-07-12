@@ -63,16 +63,19 @@ document.addEventListener("DOMContentLoaded", function () {
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
       deleteButton.addEventListener("click", function (event) {
-        event.stopPropagation();
-        habitList.removeChild(tr);
-        deleteHabitFromStorage(habit.text);
-        updateProgressBars(); // Update progress bars when a habit is deleted
+          event.stopPropagation();
+          const confirmation = confirm("Are you sure you want to delete?");
+          if (confirmation) {
+              habitList.removeChild(tr);
+              deleteHabitFromStorage(habit.text);
+              updateProgressBars(); // Update progress bars when a habit is deleted
+          }
       });
       tdDelete.appendChild(deleteButton);
       tr.appendChild(tdDelete);
-  
+
       habitList.appendChild(tr);
-    }
+  }
   
     // Update the progress bars to reflect habit completion
     function updateProgressBars() {
