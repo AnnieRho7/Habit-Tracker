@@ -32,6 +32,7 @@ Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 
 **User Story 4**: As a user, I want to delete habits that I no longer wish to track.
 - Feature: Delete button next to each habit to remove it from the tracker.
+- Feature: Confirmation prompt before deleting to prevent accidental removal.
 
 **User Story 5**: As a user, I want to view my weekly progress visually.
 -  Weekly progress bar showing completion indicator for each habit.
