@@ -75,7 +75,10 @@ document.addEventListener("DOMContentLoaded", function () {
       tr.appendChild(tdDelete);
 
       habitList.appendChild(tr);
+
+      
   }
+
   
     // Update the progress bars to reflect habit completion
     function updateProgressBars() {

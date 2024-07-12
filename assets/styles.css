@@ -76,6 +76,7 @@ button:hover {
     background: #4cae4c;
 }
 
+
 /* Table styles */
 table {
     width: 100%;
@@ -113,6 +114,17 @@ th, td {
     color: white;
 }
 
+td button {
+    background-color: red; /* Change background color */
+    color: white; /* Change text color */
+    border: none; /* Remove border if not needed */
+    padding: 5px 10px; /* Adjust padding */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+td button:hover {
+    background-color: darkred; /* Change hover background color */
+}
 
 /* Header */
 header {
