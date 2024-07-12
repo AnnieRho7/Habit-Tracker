@@ -37,13 +37,12 @@ Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 -  Weekly progress bar showing completion indicator for each habit.
 
 ## Bugs
-I ran my code through validator and learned that I had a space character in one of my folders which was an error i fixed.
-After changing some CSS my footer was showing list style type so i set that to none.
-Weekly progress bars were off so I  went and checked css to see I had forgot to remove previous CSS.
-My habit tracker was not responive on all screen sizes. I added a media query to fix this.
 
-
-
+- **Folder Naming Issue**: Upon running my code through a validator, I discovered a space character in one of my folder names, which caused an error. This was promptly corrected.
+- **Footer Styling**: After modifying some CSS, the footer displayed list style types. I resolved this by setting the list-style-type property to none.
+- **Weekly Progress Bars**: The weekly progress bars were misaligned due to leftover CSS from previous implementations. This issue was fixed by reviewing and removing the obsolete CSS.
+- **Responsive Design**: The habit tracker was not fully responsive on all screen sizes. I addressed this by adding a media query to ensure proper responsiveness.
+- **Text Overflow**: To enhance the user interface, I added the text-overflow: ellipsis property to handle overflow text in the text box.
 
 
 ### Features
@@ -107,7 +106,7 @@ HTML, CSS, JavaScript
       - Under "Source", click the dropdown called "None" and select "Master Branch".
       - The page will automatically refresh.
       - Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-      - live link for the page can be found here [Aligned](https://annierho7.github.io/aligned/index.html)
+      - live link for the page can be found here [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 - Forking the GitHub Repository
     - By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps
      - Log in to GitHub and locate the GitHub Repository
