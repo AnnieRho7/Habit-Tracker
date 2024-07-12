@@ -46,6 +46,15 @@ Visit the deployed site: [Habit Hub](https://annierho7.github.io/Habit-Tracker/)
 - **Text Overflow**: To enhance the user interface, I added the text-overflow: ellipsis property to handle overflow text in the text box.
 
 
+### Wireframes
+![Desktop](/assets/readme-images/wiredesk.png)
+
+showing nav bar for mobile devices.
+
+![Mobile](/assets/readme-images/wiremob.png)
+
+
+
 ### Features
 
 Habit Tracker is a single-page application featuring sections for adding habits, marking them as completed, deleting habits, and displaying weekly progress.
@@ -130,7 +139,7 @@ HTML, CSS, JavaScript
 Testing was conducted throughout the development process using Chrome Developer Tools for debugging and troubleshooting.
 
 
-Both HTML and CSS were validated using W3C validators, Javascript was tested using JSHINT ensuring compliance and correctness.
+Both HTML and CSS were validated using W3C validators, Javascript was tested using JSHINT.
 
 ![index.html Validator](assets/readme-images/htmlvalidat.png)
 ![style.css Validator](assets/readme-images/cssvalidate.png)
